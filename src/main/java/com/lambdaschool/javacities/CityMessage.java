@@ -11,7 +11,7 @@ public class CityMessage implements Serializable {
     private final int priority;
     private final boolean secret;
 
-    public CityMessage(@JsonProperty("text") String text,
+    public CityMessage(@JsonProperty("Text") String text,
                        @JsonProperty("priority") int priority,
                        @JsonProperty("secret") boolean secret) {
         this.text = text;

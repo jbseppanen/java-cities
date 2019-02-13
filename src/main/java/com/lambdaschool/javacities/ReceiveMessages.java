@@ -12,7 +12,6 @@ public class ReceiveMessages {
     public void receivedSecretMessage(CityMessage message) {
         log.info("Received Secret Message: {} ",message.toString());
     }
-
     @RabbitListener(queues = JavaCitiesApplication.QUEUE_NAME_CITIES1)
     public void receivedCities1Message(CityMessage message) {
         log.info("Received Cities1 Message: {} ",message.toString());
